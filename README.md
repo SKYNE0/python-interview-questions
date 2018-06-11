@@ -355,6 +355,35 @@ c= a if a>1 else b #如果a大于1的话，c=a，否则c=b
 ```
 
 ### 16、列举 Python2和Python3的区别？
+```
+     一、python2  的代码混乱 重复较多 冗余  因为当时来编写的人有C 语言的大牛 和 java的大牛等各种大神 所以里面都含有各种语言的影子
+            python3  经过龟叔的一个暑假的整理 终于在2018年11月 统一了代码  源码规范 清晰 简单优美。 
+
+    二、python3  print（"内容"）
+           python2 ptint()   或者print '内容'
+
+   三、python3 编码：utf-8
+          python2编码： 默认编码：ascii     解决办法：在首行 #    -*- ending：utf-8-*-
+
+   四、用户交互 input
+          python2:  raw-input（）
+
+          python3:input ()  
+
+五、python2x  :unicode 默认2个字节表示一个字符  可以在LINUX 编译安装时做调整
+      python3x：unicode 默认是4个字节表示一个字符 
+
+六、python2x  没有nonlocal
+      python3x   加入的
+
+七 、python3x  新建的包里面的init文件如果你删除该文件  包照样可以被调用
+        python2x  新建的包如果没有init文件 则包不能够被调用 直接报错
+
+八、python2 中的经典类 遍历方法是以深度优先    新式类是以广度优先 
+      python3 中不存在经典类  所有的类都是新式类  所以都是广度优先
+```
+##### 详细介绍：
+##### [Python2和Python3的差异](https://www.cnblogs.com/kendrick/p/7478304.html)
 
 ### 17、用一行代码实现数值交换：
 
@@ -362,31 +391,162 @@ c= a if a>1 else b #如果a大于1的话，c=a，否则c=b
  a = 1
 
  b = 2
+ 
+ a, b = b, a
 ```
 
 ### 18、Python3和Python2中 int 和 long的区别？
+```
+Python 2有为非浮点数准备的int和long类型。int类型的最大值不能超过sys.maxint，而且这个最大值是平台相关的。
+可以通过在数字的末尾附上一个L来定义长整型，显然，它比int类型表示的数字范围更大。在Python 3里，
+只有一种整数类型int，大多数情况下，它很像Python 2里的长整型。由于已经不存在两种类型的整数，所以就没有必要使用特殊的语法去区别他们。
+
+Notes  	Python 2 	         Python 3
+
+① 	x =1000000000000L 	  x =1000000000000
+
+② 	x =0xFFFFFFFFFFFFL 	  x =0xFFFFFFFFFFFF
+
+③ 	    long(x) 	            int(x)
+
+④ 	  type(x)is long 	     type(x)is int
+
+⑤ 	isinstance(x,long) 	isinstance(x,int)
+
+在Python 2里的十进制长整型在Python 3里被替换为十进制的普通整数。
+在Python 2里的十六进制长整型在Python 3里被替换为十六进制的普通整数。
+在Python 3里，由于长整型已经不存在了，自然原来的long()函数也没有了。为了强制转换一个变量到整型，可以使用int()函数。
+检查一个变量是否是整型，获得它的数据类型，并与一个int类型(不是long)的作比较。
+你也可以使用isinstance()函数来检查数据类型；再强调一次，使用int，而不是long，来检查整数类型。
+```
 
 ### 19、xrange和range的区别？
+```
+range产生的是一个列表，而xrange产生的是一个生成器器的。
+
+所以对于较大的集合时候，xrange比range性能好。
+
+因为range一次把所以数据都返回，而xrange每次调用返回其中的一个值
+```
 
 ### 20、文件操作时：xreadlines和readlines的区别？
+```
+原理同19题一样。
+```
 
 ### 21、列举布尔值为False的常见值？
+```
+False  None  0 ‘’ “” [] {} ()
+```
 
 ### 22、字符串、列表、元组、字典每个常用的5个方法？
+```
+str   .join()  .split()  .lower()  .upper()  .strip()
+list   .append()  .pop()  .reverse() .sort()  .remove()
+tuple  .index()  .count()  len(atuple)  max(atuple)  min(tuple)
+dict   .get()  .keys()  .values()  .iters()  .update()
+```
 
 ### 23、lambda表达式格式以及应用场景？
+```
+python 使用 lambda 表达式来创建匿名函数
+
+lambda只是一个表达式，函数体比def简单很多
+lambda的主体是一个表达式，而不是一个代码块。仅仅能在lambda表达式中封装有限的逻辑进去
+lambda函数拥有自己的名字空间，且不能访问自有参数列表之外或全局名字空间里的参数
+虽然lambda函数看起来只能写一行，却不等同于C或C++的内联函数，后者的目的是调用小函数时不占用栈内存从而增加运行效率
+
+lambda函数的语法只包含一个语句： lambda [arg1 [,arg2,…..argn]]:expression 
+
+lambda 函数与Python的函数式编程有很大联系，比如：map(), reduce(), filter()
+```
+##### 参考阅读：
+##### [python中lambda表达式应用](https://www.cnblogs.com/Eva-J/p/4977819.html)
 
 ### 24、pass的作用？
+```
+Python pass是空语句，是为了保持程序结构的完整性。
 
-### 25、*arg和**kwarg作用
+pass 不做任何事情，一般用做占位语句。
+```
+### 25、*arg和**kwarg作用?
+```
+可变参数 *args 允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个tuple,
 
-### 26、is和==的区别
+而 关键字参数 **kwargs 允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict。
+```
+
+### 26、is和==的区别？
+```
+Python中的对象包含三要素：id、type、value
+其中id用来唯一标识一个对象，type标识对象的类型，value是对象的值
+is判断的是a对象是否就是b对象，是通过id来判断的
+==判断的是a对象的值是否和b对象的值相等，是通过value来判断的
+
+简单说就是：
+is 对比地址   ==  对比值
+```
 
 ### 27、简述Python的深浅拷贝以及应用场景？
+```
+= 赋值：数据完全共享（=赋值是在内存中指向同一个对象，如果是可变(mutable)类型，比如列表，修改其中一个，另一个必定改变
+如果是不可变类型(immutable),比如字符串，修改了其中一个，另一个并不会变
+
+浅拷贝：数据半共享（复制其数据独立内存存放，但是只拷贝成功第一层）
+
+深拷贝：数据完全不共享（复制其数据完完全全放独立的一个内存，完全拷贝，数据不共享）
+```
+##### 参考阅读：
+##### [Python深浅拷贝](https://www.jianshu.com/p/c1e561d8ca7c)
 
 ### 28、Python垃圾回收机制？
+```
+Python GC主要使用引用计数（reference counting）来跟踪和回收垃圾。在引用计数的基础上，
+通过“标记-清除”（mark and sweep）解决容器对象可能产生的循环引用问题，
+通过“分代回收”（generation collection）以空间换时间的方法提高垃圾回收效率。
+
+1 引用计数
+
+PyObject是每个对象必有的内容，其中ob_refcnt就是做为引用计数。当一个对象有新的引用时，它的ob_refcnt就会增加，
+当引用它的对象被删除，它的ob_refcnt就会减少.引用计数为0时，该对象生命就结束了。
+
+优点:
+
+    简单
+    实时性
+
+缺点:
+
+    维护引用计数消耗资源
+    循环引用
+
+2 标记-清除机制
+
+基本思路是先按需分配，等到没有空闲内存的时候从寄存器和程序栈上的引用出发，遍历以对象为节点、以引用为边构成的图，
+把所有可以访问到的对象打上标记，然后清扫一遍内存空间，把所有没标记的对象释放。
+3 分代技术
+
+分代回收的整体思想是：将系统中的所有内存块根据其存活时间划分为不同的集合，每个集合就成为一个“代”，
+垃圾收集频率随着“代”的存活时间的增大而减小，存活时间通常利用经过几次垃圾回收来度量。
+
+Python默认定义了三代对象集合，索引数越大，对象存活时间越长。
+
+举例： 当某些内存块M经过了3次垃圾收集的清洗之后还存活时，我们就将内存块M划到一个集合A中去，而新分配的内存都划分到集合B中去。
+当垃圾收集开始工作时，大多数情况都只对集合B进行垃圾回收，而对集合A进行垃圾回收要隔相当长一段时间后才进行，
+这就使得垃圾收集机制需要处理的内存少了，效率自然就提高了。在这个过程中，集合B中的某些内存块由于存活时间长而会被转移到集合A中，
+当然，集合A中实际上也存在一些垃圾，这些垃圾的回收会因为这种分代的机制而被延迟。
+```
 
 ### 29、Python的可变类型和不可变类型？
+```
+Python的每个对象都分为可变和不可变，
+主要的核心类型中，
+不可变 : 数字、字符串、元组
+可变 : 列表、字典
+
+对不可变类型的变量重新赋值，实际上是重新创建一个不可变类型的对象，
+并将原来的变量重新指向新创建的对象（如果没有其他变量引用原有对象的话（即引用计数为0），原有对象就会被回收）。
+```
 
 ### 30、求结果：
 ```
@@ -401,6 +561,9 @@ c= a if a>1 else b #如果a大于1的话，c=a，否则c=b
 
  print(v)
 
+{'k1': [666], 'k2': [666]}
+{'k1': 777, 'k2': [666]}
+该题上面的几道题的综合考察，请仔细思考一下。
  ```
 
 ### 31、求结果：
@@ -408,6 +571,24 @@ c= a if a>1 else b #如果a大于1的话，c=a，否则c=b
 ![](https://images2018.cnblogs.com/blog/425762/201805/425762-20180523191729906-771120081.png)
 
 ### 32、列举常见的内置函数？
+```
+abs() 	divmod() 	input() 	open() 	staticmethod()
+all() 	enumerate() 	int() 	ord() 	str()
+any() 	eval() 	isinstance() 	pow() 	sum()
+basestring() 	execfile() 	issubclass() 	print() 	super()
+bin() 	file() 	iter() 	property() 	tuple()
+bool() 	filter() 	len() 	range() 	type()
+bytearray() 	float() 	list() 	raw_input() 	unichr()
+callable() 	format() 	locals() 	reduce() 	unicode()
+chr() 	frozenset() 	long() 	reload() 	vars()
+classmethod() 	getattr() 	map() 	repr() 	xrange()
+cmp() 	globals() 	max() 	reverse() 	zip()
+compile() 	hasattr() 	memoryview() 	round() 	__import__()
+complex() 	hash() 	min() 	set() 	
+delattr() 	help() 	next() 	setattr() 	
+dict() 	hex() 	object() 	slice() 	
+dir() 	id() 	oct() 	sorted()
+```
 
 ### 33、filter、map、reduce的作用？
 
