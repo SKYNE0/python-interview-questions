@@ -114,7 +114,7 @@ Python编译器本身也可以被集成到其它需要脚本语言的程序内。因此，很多人还把Python作
 而一些网页脚本、服务器脚本及辅助开发接口这样的对速度要求不高、对不同系统平台间的兼容性有一定要求的程序则通常使用解释性语言，如JavaScript、VBScript、Perl、Python、Ruby、MATLAB 等等。
 ```
 ##### 详细介绍：
-#####[编译型与解释型、动态语言与静态语言、强类型语言与弱类型语言的区别](https://juejin.im/entry/58918ef0128fe1006c92e1a4)
+##### [编译型与解释型、动态语言与静态语言、强类型语言与弱类型语言的区别](https://juejin.im/entry/58918ef0128fe1006c92e1a4)
 ##### [简述编译型与解释型编程语言](https://www.i3geek.com/archives/583)
 
 ### 5、Python解释器种类以及特点？
@@ -591,35 +591,123 @@ dir() 	id() 	oct() 	sorted()
 ```
 
 ### 33、filter、map、reduce的作用？
+```
+filter(function, sequence)：对sequence中的item依次执行function(item)，将执行结果为True的item组成一个List/String/Tuple（取决于sequence的类型）。
 
-### 34、一行代码实现9*9乘法表
+filter(function or None, sequence) -> list, tuple, or string：入参为函数和列表/元组/字符串，返回值为item列表/元组/字符串。
 
+map(function, sequence) ：对sequence中的item依次执行function(item)，将执行结果function(item)组成一个List返回。
+
+map(function, sequence[, sequence, ...]) -> list：入参是为函数和列表/元组/字符串，返回值为function(item)列表。
+
+reduce(function, sequence, starting_value)：对sequence中的item顺序迭代调用function，如果有starting_value，还可以作为初始值调用。function接收的参数个数只能为2，先把sequence中第一个值和第二个值当参数传给function，再把function的返回值和第三个值当参数传给function，然后只返回一个结果。
+
+reduce(function, sequence[, initial]) -> value：入参是为函数和列表/元组/字符串和初始值，返回值为数值。
+```
+##### 参考阅读：[不得不知的python高阶函数（Map、Reduce、Filter）](https://blog.csdn.net/u010541307/article/details/53189969)
+
+### 34、一行代码实现9*9乘法表?
+```
+print("\n".join("\t".join(["%s*%s=%s" % (x, y, x * y) for y in range(1, x + 1)]) for x in range(1, 10)))
+自己说：看起来不是那么好理解。
+```
 ### 35、如何安装第三方模块？以及用过哪些第三方模块？
+##### 参考阅读：[安装第三方模块](https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/0013868200214529634268c5b3b45b3a3ba1cd81a251a3b000)
 
-### 36、至少列举8个常用模块都有那些？
-
+### 36、至少列举8个常用模块都有哪些？
+```
+os , sys, time, random, logging
+```
 ### 37、re的match和search区别？
+```
+re模块中match(pattern,string[,flags]),检查string的开头是否与pattern匹配。
+
+re模块中research(pattern,string[,flags]),在string搜索pattern的第一个匹配值。
+```
 
 ### 38、什么是正则的贪婪匹配？
+```
+如：String str="abcaxc";
 
-### 39、求结果： a. [ i % 2 for i in range(10) ] b. ( i % 2 for i in range(10) )
+Patter p="ab*c";
 
-### 40、求结果： a. 1 or 2 b. 1 and 2 c. 1 < (2==2) d. 1 < 2 == 2
+贪婪匹配:正则表达式一般趋向于最大长度匹配，也就是所谓的贪婪匹配。如上面使用模式p匹配字符串str，结果就是匹配到：abcaxc(ab*c)。
+非贪婪匹配：就是匹配到结果就好，就少的匹配字符。如上面使用模式p匹配字符串str，结果就是匹配到：abc(ab*c)。
+
+编程中如何区分两种模式
+
+默认是贪婪模式；在量词后面直接加上一个问号？就是非贪婪模式。
+```
+##### 参考阅读：[Python 正则表达式之三：贪婪](https://juejin.im/entry/58b6c3b98d6d810065225d1d)
+
+### 39、求结果： 
+###  a： [ i % 2 for i in range(10) ] 
+###  b： ( i % 2 for i in range(10) )
+```
+a: [0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+b: <generator object <genexpr> at 0x011A3E40>
+自己说：对于a就是个列表表达式，b则是个元组生成器
+```
+##### 参考阅读：[python之字典、列表、元组生成器的使用](https://www.cnblogs.com/cwp-bg/p/9041319.html)
+
+### 40、求结果： 
+###  a. 1 or 2 
+###  b. 1 and 2 
+###  c. 1 < (2==2) 
+###  d. 1 < 2 == 2
+```
+1
+2
+False
+True
+```
+##### 参考阅读：[python中and-or语法](https://blog.csdn.net/permike/article/details/52311211)
 
 ### 41、def func(a,b=[]) 这种写法有什么坑？
+```
+Pycharm的语法警告：
+Default argument value is mutable less... (Ctrl+F1) 
+This inspection detects when a mutable value as list or dictionary is detected in a default value for an argument.
+Default argument values are evaluated only once at function definition time, which means that 
+modifying the default value of the argument will affect all subsequent calls of the function
+最后一句的翻译：这意味着修改参数的默认值将影响函数的所有后续调用
+网友解释：
+b=[] 不是空的意思 就是默认创建了一个长度为0的list 这个在定义函数的时候就创建了 
+又因为创建的b是一个变量 而且是不可变的对象 
+也就是始终指向同一地址 所以每次调用函数得到的b都会改变
+所以：建议b的默认值为None
+```
 
 ### 42、如何实现 “1,2,3” 变成 [‘1’,’2’,’3’] ?
+```
+astring = “1,2,3”
+list(astring.split(','))
+```
 
 ### 43、如何实现[‘1’,’2’,’3’]变成[1,2,3] ?
-
+```
+map(int, [‘1’,’2’,’3’])
+```
 ### 44、比较： a = [1,2,3] 和 b = [(1),(2),(3) ] 以及 b = [(1,),(2,),(3,) ] 的区别？
+```
+自己说：能力有限，但可以看出，a， b相同，a, b都是list,所包含的元素都为int, 最后边的b包含的元素是tuple
+```
 
 ### 45、如何用一行代码生成[1,4,9,16,25,36,49,64,81,100] ?
+```
+[x*x for x in range(1, 11)]
+```
 
 ### 46、一行代码实现删除列表中重复的值 ?
+```
+alist = [6,9,3,6,5,4,78,5,4,4,4]
+list(set(alsit))
+```
 
 ### 47、如何在函数中设置一个全局变量 ?
-
+```
+global var
+```
 ### 48、logging模块的作用？以及应用场景？
 
 ### 49、请用代码简答实现stack 。
