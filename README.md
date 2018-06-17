@@ -18,6 +18,8 @@
 ¹æ·¶µÄ´úÂë £º Python²»ÐèÒª±àÒë³É¶þ½øÖÆ´úÂëµÄÇ¿ÖÆËõ½ø·½Ê½£¬Ê¹µÃ´úÂë¾ßÓÐ½ÏºÃµÄ¿É¶ÁÐÔ¡£
 
 ×Ô¼ºËµ£ºÀ´×ÔÄ³ÅàÑµ»ú¹¹µÄÐû´«¡£
+
+µ±È»£¬²»¹ÜÎÒÃÇÍ¨¹ýÊ²Ã´ÇþµÀ£¬·½Ê½¿ªÊ¼Ñ§Ï°Python£¬ÎÒÃÇ¶¼Ó¦µ±¼á³ÖÏÂÈ¥¡£
 ```
 
 ### 2¡¢Í¨¹ýÊ²Ã´Í¾¾¶Ñ§Ï°µÄPython£¿
@@ -25,7 +27,9 @@
 ##### ²Î¿¼ÏÂÃæÁ½ÆªÖªºõÎÄÕÂ£º
 ##### [1,¹ØÓÚ Python µÄ¾­µäÈëÃÅÊé¼®ÓÐÄÄÐ©£¿](https://www.zhihu.com/question/19593179)
 ##### [2,ÔõÃ´ÓÃ×î¶ÌÊ±¼ä¸ßÐ§¶øÌ¤ÊµµØÑ§Ï° Python£¿](https://www.zhihu.com/question/28530832)
-##### ×Ô¼ºËµ£ºPythonÈ·ÊµÊÇÃÅÓï·¨¼ò½àÓÅÃÀ£¬ÈëÃÅ¼òµ¥µÄÓïÑÔ£¬µ«ÈçºÎÐ´³ö¼«¾ßPythonic·ç¸ñµÄ´úÂë£¬ÊÇÐèÒªÄÍÐÄÑ§Ï°£¬¿Ì¿àÁ·Ï°µÄ¡£
+##### ×Ô¼ºËµ£ºPythonÈ·ÊµÊÇÃÅÓï·¨¼ò½àÓÅÃÀ£¬ÈëÃÅ¼òµ¥µÄÓïÑÔ£¬µ«ÈçºÎÐ´³ö¼«¾ßPythonic·ç¸ñµÄ´úÂë£¬ÊÇÐèÒªÄÍÐÄÑ§Ï°£¬¿Ì¿àÁ·Ï°µÄ£¬
+##### Èç¹ûÓÐÆäËûÓïÑÔ»ù´¡µÄ»°£¬×Ô¼º¾õµÃ¿´ÊéµÄÐ§ÂÊ¸ü¸ß£¬µ±È»£¬Í¨¹ýÊÓÆµµ±È»¸üÊÊºÏÀí½â»ÞÉ¬ÄÑ¶®µÄ¸ÅÄî£¬ËäÈ»PythonÖÐ²¢²»¶à¡£
+
 
 ### 3¡¢PythonºÍJava¡¢PHP¡¢C¡¢C#¡¢C++µÈÆäËûÓïÑÔµÄ¶Ô±È£¿
 ```
@@ -167,6 +171,8 @@ PythonµÄ½âÊÍÆ÷ºÜ¶à£¬µ«Ê¹ÓÃ×î¹ã·ºµÄ»¹ÊÇCPython¡£Èç¹ûÒªºÍJava»ò.NetÆ½Ì¨½»»¥£¬×îºÃµ
 
 ### 8¡¢ÇëÖÁÉÙÁÐ¾Ù5¸ö PEP8 ¹æ·¶£¨Ô½¶àÔ½ºÃ£©¡£
 ```
+´úÂë¹æ·¶Ö÷ÒªÊÇÒÔÏÂ¼¸µã£º
+
 Ò» ´úÂë±àÅÅ
 
 ¶þ ÎÄµµ±àÅÅ
@@ -179,7 +185,6 @@ PythonµÄ½âÊÍÆ÷ºÜ¶à£¬µ«Ê¹ÓÃ×î¹ã·ºµÄ»¹ÊÇCPython¡£Èç¹ûÒªºÍJava»ò.NetÆ½Ì¨½»»¥£¬×îºÃµ
 
 Áù ÃüÃû¹æ·¶
 
-Æß ±àÂë½¨Òé
 ```
 ##### ÏêÏ¸½éÉÜ£º
 ##### [PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
@@ -283,21 +288,39 @@ False
 
 ### 13¡¢ascii¡¢unicode¡¢utf-8¡¢gbk Çø±ð£¿
 ```
-×îÔçÖ»ÓÐ127¸ö×ÖÄ¸±»±àÂëµ½¼ÆËã»úÀï£¬Ò²¾ÍÊÇ´óÐ¡Ð´Ó¢ÎÄ×ÖÄ¸¡¢Êý×ÖºÍÒ»Ð©·ûºÅ£¬Õâ¸ö±àÂë±í±»³ÆÎªASCII±àÂë£¬±ÈÈç´óÐ´×ÖÄ¸AµÄ±àÂëÊÇ65£¬Ð¡Ð´×ÖÄ¸zµÄ±àÂëÊÇ122¡£
+×îÔçÖ»ÓÐ127¸ö×ÖÄ¸±»±àÂëµ½¼ÆËã»úÀï£¬Ò²¾ÍÊÇ´óÐ¡Ð´Ó¢ÎÄ×ÖÄ¸¡¢Êý×ÖºÍÒ»Ð©·ûºÅ£¬Õâ¸ö±àÂë±í±»³ÆÎªASCII±àÂë£¬
 
-µ«ÊÇÒª´¦ÀíÖÐÎÄÏÔÈ»Ò»¸ö×Ö½ÚÊÇ²»¹»µÄ£¬ÖÁÉÙÐèÒªÁ½¸ö×Ö½Ú£¬¶øÇÒ»¹²»ÄÜºÍASCII±àÂë³åÍ»£¬ËùÒÔ£¬ÖÐ¹úÖÆ¶¨ÁËGB2312±àÂë£¬ÓÃÀ´°ÑÖÐÎÄ±à½øÈ¥¡£
+±ÈÈç´óÐ´×ÖÄ¸AµÄ±àÂëÊÇ65£¬Ð¡Ð´×ÖÄ¸zµÄ±àÂëÊÇ122¡£
 
-Äã¿ÉÒÔÏëµÃµ½µÄÊÇ£¬È«ÊÀ½çÓÐÉÏ°ÙÖÖÓïÑÔ£¬ÈÕ±¾°ÑÈÕÎÄ±àµ½Shift_JISÀï£¬º«¹ú°Ñº«ÎÄ±àµ½Euc-krÀï£¬¸÷¹úÓÐ¸÷¹úµÄ±ê×¼£¬¾Í»á²»¿É±ÜÃâµØ³öÏÖ³åÍ»£¬½á¹û¾ÍÊÇ£¬ÔÚ¶àÓïÑÔ»ìºÏµÄÎÄ±¾ÖÐ£¬ÏÔÊ¾³öÀ´»áÓÐÂÒÂë¡£
+µ«ÊÇÒª´¦ÀíÖÐÎÄÏÔÈ»Ò»¸ö×Ö½ÚÊÇ²»¹»µÄ£¬ÖÁÉÙÐèÒªÁ½¸ö×Ö½Ú£¬¶øÇÒ»¹²»ÄÜºÍASCII±àÂë³åÍ»£¬
+
+ËùÒÔ£¬ÖÐ¹úÖÆ¶¨ÁËGB2312±àÂë£¬ÓÃÀ´°ÑÖÐÎÄ±à½øÈ¥¡£
+
+Äã¿ÉÒÔÏëµÃµ½µÄÊÇ£¬È«ÊÀ½çÓÐÉÏ°ÙÖÖÓïÑÔ£¬ÈÕ±¾°ÑÈÕÎÄ±àµ½Shift_JISÀï£¬º«¹ú°Ñº«ÎÄ±àµ½Euc-krÀï£¬
+
+¸÷¹úÓÐ¸÷¹úµÄ±ê×¼£¬¾Í»á²»¿É±ÜÃâµØ³öÏÖ³åÍ»£¬
+
+½á¹û¾ÍÊÇ£¬ÔÚ¶àÓïÑÔ»ìºÏµÄÎÄ±¾ÖÐ£¬ÏÔÊ¾³öÀ´»áÓÐÂÒÂë¡£
 
 Òò´Ë£¬UnicodeÓ¦ÔË¶øÉú¡£Unicode°ÑËùÓÐÓïÑÔ¶¼Í³Ò»µ½Ò»Ì×±àÂëÀï£¬ÕâÑù¾Í²»»áÔÙÓÐÂÒÂëÎÊÌâÁË¡£
 
-Unicode±ê×¼Ò²ÔÚ²»¶Ï·¢Õ¹£¬µ«×î³£ÓÃµÄÊÇÓÃÁ½¸ö×Ö½Ú±íÊ¾Ò»¸ö×Ö·û£¨Èç¹ûÒªÓÃµ½·Ç³£Æ«Æ§µÄ×Ö·û£¬¾ÍÐèÒª4¸ö×Ö½Ú£©¡£ÏÖ´ú²Ù×÷ÏµÍ³ºÍ´ó¶àÊý±à³ÌÓïÑÔ¶¼Ö±½ÓÖ§³ÖUnicode¡£
+Unicode±ê×¼Ò²ÔÚ²»¶Ï·¢Õ¹£¬µ«×î³£ÓÃµÄÊÇÓÃÁ½¸ö×Ö½Ú±íÊ¾Ò»¸ö×Ö·û£¨Èç¹ûÒªÓÃµ½·Ç³£Æ«Æ§µÄ×Ö·û£¬¾ÍÐèÒª4¸ö×Ö½Ú£©¡£
 
-ÐÂµÄÎÊÌâÓÖ³öÏÖÁË£ºÈç¹ûÍ³Ò»³ÉUnicode±àÂë£¬ÂÒÂëÎÊÌâ´Ó´ËÏûÊ§ÁË¡£µ«ÊÇ£¬Èç¹ûÄãÐ´µÄÎÄ±¾»ù±¾ÉÏÈ«²¿ÊÇÓ¢ÎÄµÄ»°£¬ÓÃUnicode±àÂë±ÈASCII±àÂëÐèÒª¶àÒ»±¶µÄ´æ´¢¿Õ¼ä£¬ÔÚ´æ´¢ºÍ´«ÊäÉÏ¾ÍÊ®·Ö²»»®Ëã¡£
+ÏÖ´ú²Ù×÷ÏµÍ³ºÍ´ó¶àÊý±à³ÌÓïÑÔ¶¼Ö±½ÓÖ§³ÖUnicode¡£ÐÂµÄÎÊÌâÓÖ³öÏÖÁË£ºÈç¹ûÍ³Ò»³ÉUnicode±àÂë£¬ÂÒÂëÎÊÌâ´Ó´ËÏûÊ§ÁË¡£
 
-ËùÒÔ£¬±¾×Å½ÚÔ¼µÄ¾«Éñ£¬ÓÖ³öÏÖÁË°ÑUnicode±àÂë×ª»¯Îª¡°¿É±ä³¤±àÂë¡±µÄUTF-8±àÂë¡£UTF-8±àÂë°ÑÒ»¸öUnicode×Ö·û¸ù¾Ý²»Í¬µÄÊý×Ö´óÐ¡±àÂë³É1-6¸ö×Ö½Ú£¬³£ÓÃµÄÓ¢ÎÄ×ÖÄ¸±»±àÂë³É1¸ö×Ö½Ú£¬ºº×ÖÍ¨³£ÊÇ3¸ö×Ö½Ú£¬Ö»ÓÐºÜÉúÆ§µÄ×Ö·û²Å»á±»±àÂë³É4-6¸ö×Ö½Ú¡£Èç¹ûÄãÒª´«ÊäµÄÎÄ±¾°üº¬´óÁ¿Ó¢ÎÄ×Ö·û£¬ÓÃUTF-8±àÂë¾ÍÄÜ½ÚÊ¡¿Õ¼ä¡£
+µ«ÊÇ£¬Èç¹ûÄãÐ´µÄÎÄ±¾»ù±¾ÉÏÈ«²¿ÊÇÓ¢ÎÄµÄ»°£¬ÓÃUnicode±àÂë±ÈASCII±àÂëÐèÒª¶àÒ»±¶µÄ´æ´¢¿Õ¼ä£¬ÔÚ´æ´¢ºÍ´«ÊäÉÏ¾ÍÊ®·Ö²»»®Ëã¡£
 
-UTF-8±àÂëÓÐÒ»¸ö¶îÍâµÄºÃ´¦£¬¾ÍÊÇASCII±àÂëÊµ¼ÊÉÏ¿ÉÒÔ±»¿´³ÉÊÇUTF-8±àÂëµÄÒ»²¿·Ö£¬ËùÒÔ£¬´óÁ¿Ö»Ö§³ÖASCII±àÂëµÄÀúÊ·ÒÅÁôÈí¼þ¿ÉÒÔÔÚUTF-8±àÂëÏÂ¼ÌÐø¹¤×÷¡£
+ËùÒÔ£¬±¾×Å½ÚÔ¼µÄ¾«Éñ£¬ÓÖ³öÏÖÁË°ÑUnicode±àÂë×ª»¯Îª¡°¿É±ä³¤±àÂë¡±µÄUTF-8±àÂë¡£
+
+UTF-8±àÂë°ÑÒ»¸öUnicode×Ö·û¸ù¾Ý²»Í¬µÄÊý×Ö´óÐ¡±àÂë³É1-6¸ö×Ö½Ú£¬
+
+³£ÓÃµÄÓ¢ÎÄ×ÖÄ¸±»±àÂë³É1¸ö×Ö½Ú£¬ºº×ÖÍ¨³£ÊÇ3¸ö×Ö½Ú£¬Ö»ÓÐºÜÉúÆ§µÄ×Ö·û²Å»á±»±àÂë³É4-6¸ö×Ö½Ú¡£
+
+Èç¹ûÄãÒª´«ÊäµÄÎÄ±¾°üº¬´óÁ¿Ó¢ÎÄ×Ö·û£¬ÓÃUTF-8±àÂë¾ÍÄÜ½ÚÊ¡¿Õ¼ä¡£
+
+UTF-8±àÂëÓÐÒ»¸ö¶îÍâµÄºÃ´¦£¬¾ÍÊÇASCII±àÂëÊµ¼ÊÉÏ¿ÉÒÔ±»¿´³ÉÊÇUTF-8±àÂëµÄÒ»²¿·Ö£¬
+
+ËùÒÔ£¬´óÁ¿Ö»Ö§³ÖASCII±àÂëµÄÀúÊ·ÒÅÁôÈí¼þ¿ÉÒÔÔÚUTF-8±àÂëÏÂ¼ÌÐø¹¤×÷¡£
 ```
 ##### ÏêÏ¸½éÉÜ£º
 ##### [ASCII£¬Unicode ºÍ UTF-8 µÄ¹ÊÊÂ](https://juejin.im/entry/59434c3161ff4b006cd280a1)
@@ -356,8 +379,9 @@ c= a if a>1 else b #Èç¹ûa´óÓÚ1µÄ»°£¬c=a£¬·ñÔòc=b
 
 ### 16¡¢ÁÐ¾Ù Python2ºÍPython3µÄÇø±ð£¿
 ```
-     Ò»¡¢python2  µÄ´úÂë»ìÂÒ ÖØ¸´½Ï¶à ÈßÓà  ÒòÎªµ±Ê±À´±àÐ´µÄÈËÓÐC ÓïÑÔµÄ´óÅ£ ºÍ javaµÄ´óÅ£µÈ¸÷ÖÖ´óÉñ ËùÒÔÀïÃæ¶¼º¬ÓÐ¸÷ÖÖÓïÑÔµÄÓ°×Ó
-            python3  ¾­¹ý¹êÊåµÄÒ»¸öÊî¼ÙµÄÕûÀí ÖÕÓÚÔÚ2018Äê11ÔÂ Í³Ò»ÁË´úÂë  Ô´Âë¹æ·¶ ÇåÎú ¼òµ¥ÓÅÃÀ¡£ 
+     Ò»¡¢python2  µÄ´úÂë»ìÂÒ ÖØ¸´½Ï¶à ÈßÓà  ÒòÎªµ±Ê±À´±àÐ´µÄÈËÓÐC ÓïÑÔµÄ´óÅ£ ºÍ javaµÄ´óÅ£µÈ¸÷ÖÖ´óÉñ 
+	 ËùÒÔÀïÃæ¶¼º¬ÓÐ¸÷ÖÖÓïÑÔµÄÓ°×Ó
+     python3  ¾­¹ý¹êÊåµÄÒ»¸öÊî¼ÙµÄÕûÀí ÖÕÓÚÔÚ2008Äê11ÔÂ Í³Ò»ÁË´úÂë  Ô´Âë¹æ·¶ ÇåÎú ¼òµ¥ÓÅÃÀ¡£ 
 
     ¶þ¡¢python3  print£¨"ÄÚÈÝ"£©
            python2 ptint()   »òÕßprint 'ÄÚÈÝ'
@@ -454,7 +478,8 @@ python Ê¹ÓÃ lambda ±í´ïÊ½À´´´½¨ÄäÃûº¯Êý
 lambdaÖ»ÊÇÒ»¸ö±í´ïÊ½£¬º¯ÊýÌå±Èdef¼òµ¥ºÜ¶à
 lambdaµÄÖ÷ÌåÊÇÒ»¸ö±í´ïÊ½£¬¶ø²»ÊÇÒ»¸ö´úÂë¿é¡£½ö½öÄÜÔÚlambda±í´ïÊ½ÖÐ·â×°ÓÐÏÞµÄÂß¼­½øÈ¥
 lambdaº¯ÊýÓµÓÐ×Ô¼ºµÄÃû×Ö¿Õ¼ä£¬ÇÒ²»ÄÜ·ÃÎÊ×ÔÓÐ²ÎÊýÁÐ±íÖ®Íâ»òÈ«¾ÖÃû×Ö¿Õ¼äÀïµÄ²ÎÊý
-ËäÈ»lambdaº¯Êý¿´ÆðÀ´Ö»ÄÜÐ´Ò»ÐÐ£¬È´²»µÈÍ¬ÓÚC»òC++µÄÄÚÁªº¯Êý£¬ºóÕßµÄÄ¿µÄÊÇµ÷ÓÃÐ¡º¯ÊýÊ±²»Õ¼ÓÃÕ»ÄÚ´æ´Ó¶øÔö¼ÓÔËÐÐÐ§ÂÊ
+ËäÈ»lambdaº¯Êý¿´ÆðÀ´Ö»ÄÜÐ´Ò»ÐÐ£¬È´²»µÈÍ¬ÓÚC»òC++µÄÄÚÁªº¯Êý£¬
+ºóÕßµÄÄ¿µÄÊÇµ÷ÓÃÐ¡º¯ÊýÊ±²»Õ¼ÓÃÕ»ÄÚ´æ´Ó¶øÔö¼ÓÔËÐÐÐ§ÂÊ
 
 lambdaº¯ÊýµÄÓï·¨Ö»°üº¬Ò»¸öÓï¾ä£º lambda [arg1 [,arg2,¡­..argn]]:expression 
 
@@ -489,7 +514,8 @@ is ¶Ô±ÈµØÖ·   ==  ¶Ô±ÈÖµ
 
 ### 27¡¢¼òÊöPythonµÄÉîÇ³¿½±´ÒÔ¼°Ó¦ÓÃ³¡¾°£¿
 ```
-= ¸³Öµ£ºÊý¾ÝÍêÈ«¹²Ïí£¨=¸³ÖµÊÇÔÚÄÚ´æÖÐÖ¸ÏòÍ¬Ò»¸ö¶ÔÏó£¬Èç¹ûÊÇ¿É±ä(mutable)ÀàÐÍ£¬±ÈÈçÁÐ±í£¬ÐÞ¸ÄÆäÖÐÒ»¸ö£¬ÁíÒ»¸ö±Ø¶¨¸Ä±ä
+= ¸³Öµ£ºÊý¾ÝÍêÈ«¹²Ïí£¨=¸³ÖµÊÇÔÚÄÚ´æÖÐÖ¸ÏòÍ¬Ò»¸ö¶ÔÏó£¬Èç¹ûÊÇ¿É±ä(mutable)ÀàÐÍ£¬
+±ÈÈçÁÐ±í£¬ÐÞ¸ÄÆäÖÐÒ»¸ö£¬ÁíÒ»¸ö±Ø¶¨¸Ä±ä£¬ 
 Èç¹ûÊÇ²»¿É±äÀàÐÍ(immutable),±ÈÈç×Ö·û´®£¬ÐÞ¸ÄÁËÆäÖÐÒ»¸ö£¬ÁíÒ»¸ö²¢²»»á±ä
 
 Ç³¿½±´£ºÊý¾Ý°ë¹²Ïí£¨¸´ÖÆÆäÊý¾Ý¶ÀÁ¢ÄÚ´æ´æ·Å£¬µ«ÊÇÖ»¿½±´³É¹¦µÚÒ»²ã£©
@@ -507,8 +533,10 @@ Python GCÖ÷ÒªÊ¹ÓÃÒýÓÃ¼ÆÊý£¨reference counting£©À´¸ú×ÙºÍ»ØÊÕÀ¬»ø¡£ÔÚÒýÓÃ¼ÆÊýµÄ»ù´
 
 1 ÒýÓÃ¼ÆÊý
 
-PyObjectÊÇÃ¿¸ö¶ÔÏó±ØÓÐµÄÄÚÈÝ£¬ÆäÖÐob_refcnt¾ÍÊÇ×öÎªÒýÓÃ¼ÆÊý¡£µ±Ò»¸ö¶ÔÏóÓÐÐÂµÄÒýÓÃÊ±£¬ËüµÄob_refcnt¾Í»áÔö¼Ó£¬
-µ±ÒýÓÃËüµÄ¶ÔÏó±»É¾³ý£¬ËüµÄob_refcnt¾Í»á¼õÉÙ.ÒýÓÃ¼ÆÊýÎª0Ê±£¬¸Ã¶ÔÏóÉúÃü¾Í½áÊøÁË¡£
+PyObjectÊÇÃ¿¸ö¶ÔÏó±ØÓÐµÄÄÚÈÝ£¬ÆäÖÐob_refcnt¾ÍÊÇ×öÎªÒýÓÃ¼ÆÊý¡£
+µ±Ò»¸ö¶ÔÏóÓÐÐÂµÄÒýÓÃÊ±£¬ËüµÄob_refcnt¾Í»áÔö¼Ó£¬
+µ±ÒýÓÃËüµÄ¶ÔÏó±»É¾³ý£¬ËüµÄob_refcnt¾Í»á¼õÉÙ.
+ÒýÓÃ¼ÆÊýÎª0Ê±£¬¸Ã¶ÔÏóÉúÃü¾Í½áÊøÁË¡£
 
 ÓÅµã:
 
@@ -522,8 +550,9 @@ PyObjectÊÇÃ¿¸ö¶ÔÏó±ØÓÐµÄÄÚÈÝ£¬ÆäÖÐob_refcnt¾ÍÊÇ×öÎªÒýÓÃ¼ÆÊý¡£µ±Ò»¸ö¶ÔÏóÓÐÐÂµÄÒýÓ
 
 2 ±ê¼Ç-Çå³ý»úÖÆ
 
-»ù±¾Ë¼Â·ÊÇÏÈ°´Ðè·ÖÅä£¬µÈµ½Ã»ÓÐ¿ÕÏÐÄÚ´æµÄÊ±ºò´Ó¼Ä´æÆ÷ºÍ³ÌÐòÕ»ÉÏµÄÒýÓÃ³ö·¢£¬±éÀúÒÔ¶ÔÏóÎª½Úµã¡¢ÒÔÒýÓÃÎª±ß¹¹³ÉµÄÍ¼£¬
-°ÑËùÓÐ¿ÉÒÔ·ÃÎÊµ½µÄ¶ÔÏó´òÉÏ±ê¼Ç£¬È»ºóÇåÉ¨Ò»±éÄÚ´æ¿Õ¼ä£¬°ÑËùÓÐÃ»±ê¼ÇµÄ¶ÔÏóÊÍ·Å¡£
+»ù±¾Ë¼Â·ÊÇÏÈ°´Ðè·ÖÅä£¬µÈµ½Ã»ÓÐ¿ÕÏÐÄÚ´æµÄÊ±ºò´Ó¼Ä´æÆ÷ºÍ³ÌÐòÕ»ÉÏµÄÒýÓÃ³ö·¢£¬
+±éÀúÒÔ¶ÔÏóÎª½Úµã¡¢ÒÔÒýÓÃÎª±ß¹¹³ÉµÄÍ¼£¬°ÑËùÓÐ¿ÉÒÔ·ÃÎÊµ½µÄ¶ÔÏó´òÉÏ±ê¼Ç£¬
+È»ºóÇåÉ¨Ò»±éÄÚ´æ¿Õ¼ä£¬°ÑËùÓÐÃ»±ê¼ÇµÄ¶ÔÏóÊÍ·Å¡£
 3 ·Ö´ú¼¼Êõ
 
 ·Ö´ú»ØÊÕµÄÕûÌåË¼ÏëÊÇ£º½«ÏµÍ³ÖÐµÄËùÓÐÄÚ´æ¿é¸ù¾ÝÆä´æ»îÊ±¼ä»®·ÖÎª²»Í¬µÄ¼¯ºÏ£¬Ã¿¸ö¼¯ºÏ¾Í³ÉÎªÒ»¸ö¡°´ú¡±£¬
@@ -531,9 +560,12 @@ PyObjectÊÇÃ¿¸ö¶ÔÏó±ØÓÐµÄÄÚÈÝ£¬ÆäÖÐob_refcnt¾ÍÊÇ×öÎªÒýÓÃ¼ÆÊý¡£µ±Ò»¸ö¶ÔÏóÓÐÐÂµÄÒýÓ
 
 PythonÄ¬ÈÏ¶¨ÒåÁËÈý´ú¶ÔÏó¼¯ºÏ£¬Ë÷ÒýÊýÔ½´ó£¬¶ÔÏó´æ»îÊ±¼äÔ½³¤¡£
 
-¾ÙÀý£º µ±Ä³Ð©ÄÚ´æ¿éM¾­¹ýÁË3´ÎÀ¬»øÊÕ¼¯µÄÇåÏ´Ö®ºó»¹´æ»îÊ±£¬ÎÒÃÇ¾Í½«ÄÚ´æ¿éM»®µ½Ò»¸ö¼¯ºÏAÖÐÈ¥£¬¶øÐÂ·ÖÅäµÄÄÚ´æ¶¼»®·Öµ½¼¯ºÏBÖÐÈ¥¡£
-µ±À¬»øÊÕ¼¯¿ªÊ¼¹¤×÷Ê±£¬´ó¶àÊýÇé¿ö¶¼Ö»¶Ô¼¯ºÏB½øÐÐÀ¬»ø»ØÊÕ£¬¶ø¶Ô¼¯ºÏA½øÐÐÀ¬»ø»ØÊÕÒª¸ôÏàµ±³¤Ò»¶ÎÊ±¼äºó²Å½øÐÐ£¬
-Õâ¾ÍÊ¹µÃÀ¬»øÊÕ¼¯»úÖÆÐèÒª´¦ÀíµÄÄÚ´æÉÙÁË£¬Ð§ÂÊ×ÔÈ»¾ÍÌá¸ßÁË¡£ÔÚÕâ¸ö¹ý³ÌÖÐ£¬¼¯ºÏBÖÐµÄÄ³Ð©ÄÚ´æ¿éÓÉÓÚ´æ»îÊ±¼ä³¤¶ø»á±»×ªÒÆµ½¼¯ºÏAÖÐ£¬
+¾ÙÀý£º µ±Ä³Ð©ÄÚ´æ¿éM¾­¹ýÁË3´ÎÀ¬»øÊÕ¼¯µÄÇåÏ´Ö®ºó»¹´æ»îÊ±£¬ÎÒÃÇ¾Í½«ÄÚ´æ¿éM»®µ½Ò»¸ö¼¯ºÏAÖÐÈ¥£¬
+¶øÐÂ·ÖÅäµÄÄÚ´æ¶¼»®·Öµ½¼¯ºÏBÖÐÈ¥¡£
+µ±À¬»øÊÕ¼¯¿ªÊ¼¹¤×÷Ê±£¬´ó¶àÊýÇé¿ö¶¼Ö»¶Ô¼¯ºÏB½øÐÐÀ¬»ø»ØÊÕ£¬
+¶ø¶Ô¼¯ºÏA½øÐÐÀ¬»ø»ØÊÕÒª¸ôÏàµ±³¤Ò»¶ÎÊ±¼äºó²Å½øÐÐ£¬
+Õâ¾ÍÊ¹µÃÀ¬»øÊÕ¼¯»úÖÆÐèÒª´¦ÀíµÄÄÚ´æÉÙÁË£¬Ð§ÂÊ×ÔÈ»¾ÍÌá¸ßÁË¡£
+ÔÚÕâ¸ö¹ý³ÌÖÐ£¬¼¯ºÏBÖÐµÄÄ³Ð©ÄÚ´æ¿éÓÉÓÚ´æ»îÊ±¼ä³¤¶ø»á±»×ªÒÆµ½¼¯ºÏAÖÐ£¬
 µ±È»£¬¼¯ºÏAÖÐÊµ¼ÊÉÏÒ²´æÔÚÒ»Ð©À¬»ø£¬ÕâÐ©À¬»øµÄ»ØÊÕ»áÒòÎªÕâÖÖ·Ö´úµÄ»úÖÆ¶ø±»ÑÓ³Ù¡£
 ```
 
@@ -550,7 +582,6 @@ PythonµÄÃ¿¸ö¶ÔÏó¶¼·ÖÎª¿É±äºÍ²»¿É±ä£¬
 
 ### 30¡¢Çó½á¹û£º
 ```
-
  v = dict.fromkeys(['k1','k2'],[])
 
  v[¡®k1¡¯].append(666)
@@ -709,34 +740,249 @@ list(set(alsit))
 global var
 ```
 ### 48¡¢loggingÄ£¿éµÄ×÷ÓÃ£¿ÒÔ¼°Ó¦ÓÃ³¡¾°£¿
+```
+PythonµÄloggingÄ£¿éÌá¹©ÁËÍ¨ÓÃµÄÈÕÖ¾ÏµÍ³£¬¿ÉÒÔ·½±ãµÚÈý·½Ä£¿é»òÕßÊÇÓ¦ÓÃÊ¹ÓÃ¡£
+Õâ¸öÄ£¿éÌá¹©²»Í¬µÄÈÕÖ¾¼¶±ð£¬²¢¿ÉÒÔ²ÉÓÃ²»Í¬µÄ·½Ê½¼ÇÂ¼ÈÕÖ¾£¬
+±ÈÈçÎÄ¼þ£¬HTTP GET/POST£¬SMTP£¬SocketµÈ£¬ÉõÖÁ¿ÉÒÔ×Ô¼ºÊµÏÖ¾ßÌåµÄÈÕÖ¾¼ÇÂ¼·½Ê½¡£
 
-### 49¡¢ÇëÓÃ´úÂë¼ò´ðÊµÏÖstack ¡£
+ÈÕÖ¾ÊÇÒ»ÖÖ¿ÉÒÔ×·×ÙÄ³Ð©Èí¼þÔËÐÐÊ±Ëù·¢ÉúÊÂ¼þµÄ·½·¨¡£Èí¼þ¿ª·¢ÈËÔ±¿ÉÒÔÏòËûÃÇµÄ´úÂëÖÐµ÷ÓÃÈÕÖ¾¼ÇÂ¼Ïà¹ØµÄ·½·¨À´±íÃ÷·¢ÉúÁËÄ³Ð©ÊÂÇé¡£
+Ò»¸öÊÂ¼þ¿ÉÒÔÓÃÒ»¸ö¿É°üº¬¿ÉÑ¡±äÁ¿Êý¾ÝµÄÏûÏ¢À´ÃèÊö¡£´ËÍâ£¬ÊÂ¼þÒ²ÓÐÖØÒªÐÔµÄ¸ÅÄî£¬Õâ¸öÖØÒªÐÔÒ²¿ÉÒÔ±»³ÆÎªÑÏÖØÐÔ¼¶±ð£¨level£©¡£
+
+1.ÈÕÖ¾µÄ×÷ÓÃ
+
+Í¨¹ýlogµÄ·ÖÎö£¬¿ÉÒÔ·½±ãÓÃ»§ÁË½âÏµÍ³»òÈí¼þ¡¢Ó¦ÓÃµÄÔËÐÐÇé¿ö£»Èç¹ûÄãµÄÓ¦ÓÃlog×ã¹»·á¸»£¬
+Ò²¿ÉÒÔ·ÖÎöÒÔÍùÓÃ»§µÄ²Ù×÷ÐÐÎª¡¢ÀàÐÍÏ²ºÃ¡¢µØÓò·Ö²¼»òÆäËû¸ü¶àÐÅÏ¢£»Èç¹ûÒ»¸öÓ¦ÓÃµÄlogÍ¬Ê±Ò²·ÖÁË¶à¸ö¼¶±ð£¬
+ÄÇÃ´¿ÉÒÔºÜÇáÒ×µØ·ÖÎöµÃµ½¸ÃÓ¦ÓÃµÄ½¡¿µ×´¿ö£¬¼°Ê±·¢ÏÖÎÊÌâ²¢¿ìËÙ¶¨Î»¡¢½â¾öÎÊÌâ£¬²¹¾ÈËðÊ§¡£
+¼òµ¥À´½²¾ÍÊÇ£¬ÎÒÃÇÍ¨¹ý¼ÇÂ¼ºÍ·ÖÎöÈÕÖ¾¿ÉÒÔÁË½âÒ»¸öÏµÍ³»òÈí¼þ³ÌÐòÔËÐÐÇé¿öÊÇ·ñÕý³££¬
+Ò²¿ÉÒÔÔÚÓ¦ÓÃ³ÌÐò³öÏÖ¹ÊÕÏÊ±¿ìËÙ¶¨Î»ÎÊÌâ¡£±ÈÈç£¬×öÔËÎ¬µÄÍ¬Ñ§£¬ÔÚ½ÓÊÕµ½±¨¾¯»ò¸÷ÖÖÎÊÌâ·´À¡ºó£¬
+½øÐÐÎÊÌâÅÅ²éÊ±Í¨³£¶¼»áÏÈÈ¥¿´¸÷ÖÖÈÕÖ¾£¬´ó²¿·ÖÎÊÌâ¶¼¿ÉÒÔÔÚÈÕÖ¾ÖÐÕÒµ½´ð°¸¡£ÔÙ±ÈÈç£¬×ö¿ª·¢µÄÍ¬Ñ§£¬
+¿ÉÒÔÍ¨¹ýIDE¿ØÖÆÌ¨ÉÏÊä³öµÄ¸÷ÖÖÈÕÖ¾½øÐÐ³ÌÐòµ÷ÊÔ¡£¶ÔÓÚÔËÎ¬ÀÏË¾»ú»òÕßÓÐ¾­ÑéµÄ¿ª·¢ÈËÔ±£¬
+¿ÉÒÔ¿ìËÙµÄÍ¨¹ýÈÕÖ¾¶¨Î»µ½ÎÊÌâµÄ¸ùÔ´¡£¿É¼û£¬ÈÕÖ¾µÄÖØÒªÐÔ²»¿ÉÐ¡êï¡£ÈÕÖ¾µÄ×÷ÓÃ¿ÉÒÔ¼òµ¥×Ü½áÎªÒÔÏÂ3µã£º
+
+    ³ÌÐòµ÷ÊÔ
+    ÁË½âÈí¼þ³ÌÐòÔËÐÐÇé¿ö£¬ÊÇ·ñÕý³£
+    Èí¼þ³ÌÐòÔËÐÐ¹ÊÕÏ·ÖÎöÓëÎÊÌâ¶¨Î»
+
+Èç¹ûÓ¦ÓÃµÄÈÕÖ¾ÐÅÏ¢×ã¹»ÏêÏ¸ºÍ·á¸»£¬»¹¿ÉÒÔÓÃÀ´×öÓÃ»§ÐÐÎª·ÖÎö£¬
+Èç£º·ÖÎöÓÃ»§µÄ²Ù×÷ÐÐÎª¡¢ÀàÐÍÏ´ºÃ¡¢µØÓò·Ö²¼ÒÔ¼°ÆäËü¸ü¶àµÄÐÅÏ¢£¬
+ÓÉ´Ë¿ÉÒÔÊµÏÖ¸Ä½øÒµÎñ¡¢Ìá¸ßÉÌÒµÀûÒæ¡£
+```
+##### ²Î¿¼ÔÄ¶Á£º[ PythonÖ®loggingÄ£¿é](https://www.cnblogs.com/Richardzhu/p/5303887.html)
+
+### 49¡¢ÇëÓÃ´úÂë½â´ðÊµÏÖstack ¡£
+```
+Python: 3.x
+
+class stack(object):
+
+
+	def __init__(self):
+		self.items = []
+		
+	def isEmpty(self):
+		return self.items == []
+	
+	def push(self, item):
+		self.items.append(item)
+	
+	def pop(self):
+		return self.items.pop()
+		
+	def peek(self):
+		return self.items[-1]
+	
+	def size(self):
+		return len(self.items)
+	
+```
 
 ### 50¡¢³£ÓÃ×Ö·û´®¸ñÊ½»¯ÄÄ¼¸ÖÖ£¿
+```
+1.×î·½±ãµÄ
+    print 'hello %s and %s' % ('df', 'another df')  
+
+µ«ÊÇ£¬ÓÐÊ±ºò£¬ÎÒÃÇÓÐºÜ¶àµÄ²ÎÊýÒª½øÐÐ¸ñÊ½»¯£¬Õâ¸öÊ±ºò£¬Ò»¸öÒ»¸öÒ»Ò»¶ÔÓ¦¾ÍÓÐµãÂé·³ÁË£¬ÓÚÊÇ¾ÍÓÐÁËµÚ¶þÖÖ£¬×ÖµäÐÎÊ½µÄ¡£ÉÏÃæÄÇÖÖÊÇtupleÐÎÊ½µÄ¡£
+
+2.×îºÃÓÃµÄ
+    print 'hello %(first)s and %(second)s' % {'first': 'df', 'second': 'another df'}  
+
+ÕâÖÖ×ÖµäÐÎÊ½µÄ×Ö·û´®¸ñÊ½»¯·½·¨£¬ÓÐÒ»¸ö×î´óµÄºÃ´¦¾ÍÊÇ£¬×ÖµäÕâ¸ö¶«Î÷¿ÉÒÔºÍjsonÎÄ¼þÏà»¥×ª»»£¬ËùÒÔ£¬µ±ÅäÖÃÎÄ¼þÊ¹ÓÃ×Ö·û´®ÉèÖÃµÄÊ±ºò£¬¾ÍÏÔµÃÏàµ±·½±ã¡£
+
+3.×îÏÈ½øµÄ
+    print 'hello {first} and {second}'.format(first='df', second='another df')  
+```
+##### ×Ô¼ºËµ£ºÄÚÈÝÀ´×Ô[pythonµÄÈýÖÖ×Ö·û´®¸ñÊ½»¯·½·¨](https://blog.csdn.net/qtlyx/article/details/77102851)
+##### ²Î¿¼ÔÄ¶Á£º[Python×Ö·û´®¸ñÊ½»¯µÄÁ½ÖÖ·½Ê½](https://www.cnblogs.com/hifelix/p/5881748.html)
 
 ### 51¡¢¼òÊö Éú³ÉÆ÷¡¢µü´úÆ÷¡¢¿Éµü´ú¶ÔÏó ÒÔ¼°Ó¦ÓÃ³¡¾°£¿
+```
+Ò»£ºÓï·¨ÌÇ
+´Ó×ÖÃæÉÏ¿´Ó¦¸ÃÊÇÒ»ÖÖÓï·¨¡£¡°ÌÇ¡±£¬¿ÉÒÔÀí½âÎª¼òµ¥¡¢¼ò½à¡£ÆäÊµÎÒÃÇÒ²ÒÑ¾­ÒâÊ¶µ½£¬
+Ã»ÓÐÕâÐ©±»³ÆÎª¡°Óï·¨ÌÇ¡±µÄÓï·¨£¬ÎÒÃÇÒ²ÄÜÊµÏÖÏàÓ¦µÄ¹¦ÄÜ£¬¶ø ¡°Óï·¨ÌÇ¡±Ê¹ÎÒÃÇ¿ÉÒÔ¸ü¼Ó¼ò½à¡¢¿ìËÙµÄÊµÏÖÕâÐ©¹¦ÄÜ¡£
+Ö»ÊÇPython½âÊÍÆ÷»á°ÑÕâÐ©ÌØ¶¨¸ñÊ½µÄÓï·¨·­Òë³ÉÔ­±¾ÄÇÑù¸´ÔÓµÄ´úÂëÂß¼­¶øÒÑ£¬Ã»ÓÐÊ²Ã´Ì«¸ßÉîµÄ¶«Î÷¡£
+ÏñÁÐ±íÍÆµ¼Ê½£¬×ÖµäÍÆµ¼Ê½£¬Ôª×éÉú³ÉÆ÷£¬ÒÔ¼°Éú³ÉÆ÷£¬µü´úÆ÷Ó¦¸Ã¶¼ÊÇÓï·¨ÌÇ¡£
+
+¶þ£ºÉú³ÉÆ÷£¨generator£©
+Éú³ÉÆ÷ÊÇ¹¹Ôìµü´úÆ÷µÄ×î¼òµ¥ÓÐÁ¦µÄ¹¤¾ß£¬ÓëÆÕÍ¨º¯Êý²»Í¬µÄÖ»ÓÐÔÚ·µ»ØÒ»¸öÖµµÄÊ±ºòÊ¹ÓÃyieldÀ´Ìæ´úreturn£¬
+È»ºóyield»á×Ô¶¯¹¹½¨ºÃnext()ºÍiter()¡£
+
+Èý£ºµü´úÆ÷£¨iterator£©
+µü´úÆ÷ÊÇÍ¨¹ýnext()À´ÊµÏÖµÄ£¬Ã¿µ÷ÓÃÒ»´ÎËû¾Í»á·µ»ØÏÂÒ»¸öÔªËØ£¬µ±Ã»ÓÐÏÂÒ»¸öÔªËØµÄÊ±ºò·µ»ØÒ»¸öStopIterationÒì³££¬
+ËùÒÔÊµ¼ÊÉÏ¶¨ÒåÁËÕâ¸ö·½·¨µÄ¶¼ËãÊÇµü´úÆ÷¡£
+
+ËÄ£º¿Éµü´ú¶ÔÏó£¨iterable£©
+PythonÖÐ¾­³£Ê¹ÓÃforÀ´¶ÔÄ³¸ö¶ÔÏó½øÐÐ±éÀú£¬´ËÊ±±»±éÀúµÄÕâ¸ö¶ÔÏó¾ÍÊÇ¿Éµü´ú¶ÔÏó£¬
+Ïñ³£¼ûµÄlist,tuple¶¼ÊÇ¡£Èç¹û¸øÒ»¸ö×¼È·µÄ¶¨ÒåµÄ»°£¬¾ÍÊÇÖ»ÒªËü¶¨ÒåÁË¿ÉÒÔ·µ»ØÒ»¸öµü´úÆ÷µÄ__iter__·½·¨£¬
+»òÕß¶¨ÒåÁË¿ÉÒÔÖ§³ÖÏÂ±êË÷ÒýµÄ__getitem__·½·¨(ÕâÐ©Ë«ÏÂ»®Ïß·½·¨»áÔÚÆäËûÕÂ½ÚÖÐÈ«Ãæ½âÊÍ)£¬
+ÄÇÃ´Ëü¾ÍÊÇÒ»¸ö¿Éµü´ú¶ÔÏó¡£
+ÖµµÃÒ»ÌáµÄÊÇ£¬Õâ¾ÍÊÇPythonÖÐµÄ¶àÌ¬£¬¶øÇÒPython·Ç³£ÍÆ³çÑ¼×ÓÀàÐÍ¡£
+```
+##### ²Î¿¼ÔÄ¶Á£º[Pythonµü´úÆ÷£¬¿Éµü´ú¶ÔÏó£¬Éú³ÉÆ÷](https://blog.csdn.net/doublehhcc/article/details/78756400)
 
 ### 52¡¢ÓÃPythonÊµÏÖÒ»¸ö¶þ·Ö²éÕÒµÄº¯Êý¡£
+```
+def binary_search(alist, key)
+	
+	low, high = 0, 0
+	mid = len(alist) - 1
+	time = 0
+	
+	while low < high:
+		time += 1
+		mid = (low + high) // 2
+		if alist[mid] < key:
+			low = mid + 1
+		elif alist[mid] > key:
+			high = mid - 1
+		else:
+			print("Search {} times!\n".format(time))
+			return mid
+	
+	print("No Search {} times!\n".format(time))
+	return False
+```
 
 ### 53¡¢Ì¸Ì¸Äã¶Ô±Õ°üµÄÀí½â£¿
+```
+±Õ°üÐèÒªÂú×ãµÄÌõ¼þ£º
+
+    1. ±ØÐëÓÐÒ»¸öÄÚÇ¶º¯Êý
+    2. ÄÚÇ¶º¯Êý±ØÐëÒýÓÃÍâ²¿º¯ÊýÖÐµÄ±äÁ¿
+    3. Íâ²¿º¯ÊýµÄ·µ»ØÖµ±ØÐëÊÇÄÚÇ¶º¯Êý
+
+±Õ°üµÄ¸ÅÄî²»Ì«ºÃÀí½â£¬×Ô¼ºÒ²ËÆ¶®·Ç¶®¡£Çë²Î¿¼ÏÂÃæµÄÔÄ¶Á¡£
+```
+##### ²Î¿¼ÔÄ¶Á£º[±Õ°ü_°Ù¶È°Ù¿Æ](https://baike.baidu.com/item/%E9%97%AD%E5%8C%85/10908873?fr=aladdin), [Python ÖÐµÄ±Õ°ü - Python - ²®ÀÖÔÚÏß](http://python.jobbole.com/82296/), [Ì¸Ì¸×Ô¼ºµÄÀí½â:pythonÖÐ±Õ°ü£¬±Õ°üµÄÊµÖÊ - Ï¡ÀïºýÍ¿ÁÖÀÏÀä - ²©¿ÍÔ°](https://www.cnblogs.com/Lin-Yi/p/7305364.html)
 
 ### 54¡¢osºÍsysÄ£¿éµÄ×÷ÓÃ£¿
+```Á½ÕßµÄÖ÷ÒªÇø±ð£º
+	osÄ£¿é¸ºÔð³ÌÐòÓë²Ù×÷ÏµÍ³µÄ½»»¥£¬Ìá¹©ÁË·ÃÎÊ²Ù×÷ÏµÍ³µ×²ãµÄ½Ó¿Ú£¬
+	sysÄ£¿é¸ºÔð³ÌÐòÓëPython½âÊÍÆ÷µÄ½»»¥£¬Ìá¹©ÁËÒ»ÏµÁÐµÄº¯ÊýºÍ±äÁ¿£¬ÓÃÓÚ²Ù¿ØpythonµÄÔËÐÐÊ±»·¾³¡£
+```
+##### ²Î¿¼ÔÄ¶Á£º[osºÍsysÄ£¿é-¾ý×í-²©¿ÍÔ°](https://www.cnblogs.com/pycode/p/sysos.html)
 
 ### 55¡¢ÈçºÎÉú³ÉÒ»¸öËæ»úÊý£¿
-
+```
+PythonÖÐÊ¹ÓÃRandomÄ£¿éÀ´Éú³ÉËæ»úÊý
+³£ÓÃµÄ·½·¨ÓÐ£º.randint(), .random(), .randrange(), .sample(), .seed(), .uniform()
+```
 ### 56¡¢ÈçºÎÊ¹ÓÃpythonÉ¾³ýÒ»¸öÎÄ¼þ£¿
+```
+Ê¹ÓÃosÄ£¿éÖÐµÄremove·½·¨£¬×¢ÒâÅÐ¶ÏÎÄ¼þÊÇ·ñ´æÔÚ£¬ÊÇ·ñ¾ßÓÐÈ¨ÏÞ¡£
+```
 
 ### 57¡¢Ì¸Ì¸Äã¶ÔÃæÏò¶ÔÏóµÄÀí½â£¿
+```
+    ÃæÏò¶ÔÏó±à³Ì£¬¼´OOP£¬ÊÇÒ»ÖÖ±à³Ì·¶Ê½£¬Âú×ãÃæÏò¶ÔÏó±à³ÌµÄÓïÑÔ£¬
+	Ò»°ã»áÌá¹©Àà¡¢·â×°¡¢¼Ì³ÐµÈÓï·¨ºÍ¸ÅÄîÀ´¸¨ÖúÎÒÃÇ½øÐÐÃæÏò¶ÔÏó±à³Ì¡£
+
+    ÃæÏò¶ÔÏóÊÇ»ùÓÚÍòÎï½Ô¶ÔÏóÕâ¸öÕÜÑ§¹Ûµã. ËùÎ½µÄÃæÏò¶ÔÏó¾ÍÊÇ½«ÎÒÃÇµÄ³ÌÐòÄ£¿é»¯£¬¶ÔÏó»¯£¬
+	°Ñ¾ßÌåÊÂÎïµÄÌØÐÔÊôÐÔºÍÍ¨¹ýÕâÐ©ÊôÐÔÀ´ÊµÏÖÒ»Ð©¶¯×÷µÄ¾ßÌå·½·¨·Åµ½Ò»¸öÀàÀïÃæ
+
+    ÃæÏò¶ÔÏóµÄÈý´óÌØÕ÷ ¼Ì³Ð£¬·â×°£¬¶àÌ¬
+
+    Ò» ¼Ì³Ð
+        ¼Ì³Ð¸ÅÄî£ºÒ»¸öÀà¼Ì³ÐÁíÒ»¸öÀà£¬Ôò³Æ¼Ì³ÐµÄÀàÎª×ÓÀà£¬±»¼Ì³ÐµÄÀàÎª¸¸Àà¡£
+        Ä¿µÄ£ºÊµÏÖ´úÂëµÄ¸´ÓÃ¡£
+        Àí½â£º×ÓÀàÓë¸¸ÀàµÄ¹ØÏµ²¢²»ÊÇÈÕ³£Éú»îÖÐµÄ¸¸×Ó¹ØÏµ£¬×ÓÀàÓë¸¸Àà¶øÊÇÒ»ÖÖÌØÊâ»¯ÓëÒ»°ã»¯µÄ¹ØÏµ£¬
+		ÊÇis-aµÄ¹ØÏµ£¬×ÓÀàÊÇ¸¸Àà¸ü¼ÓÏêÏ¸µÄ·ÖÀà¡£Èç class dog ¼Ì³ÐÓÚ animal,
+		¾Í¿ÉÒÔÀí½âÎªdog is a animal.×¢ÒâÉè¼Æ¼Ì³ÐµÄÊ±ºò.
+		
+        ½á¹û£º¼Ì³Ðºó×ÓÀà×Ô¶¯ÓµÓÐÁË¸¸ÀàµÄÊôÐÔºÍ·½·¨£¬×ÓÀà¿ÉÒÔÐ´×Ô¼ºÌØÓÐµÄÊôÐÔºÍ·½·¨£¬
+		Ä¿µÄÊÇÊµÏÖ¹¦ÄÜµÄÀ©Õ¹£¬×ÓÀàÒ²¿ÉÒÔ¸´Ð´¸¸ÀàµÄ·½·¨¼´·½·¨µÄÖØÐ´¡£
+
+    ¶þ ·â×°
+
+        ¸ÅÄî£º·â×°Ò²³ÆÎªÐÅÏ¢Òþ²Ø£¬ÊÇÖ¸ÀûÓÃ³éÏóÊý¾ÝÀàÐÍ½«Êý¾ÝºÍ»ùÓÚÊý¾ÝµÄ²Ù×÷·â×°ÔÚÒ»Æð£¬
+		Ê¹Æä¹¹³ÉÒ»¸ö²»¿É·Ö¸îµÄ¶ÀÁ¢ÊµÌå£¬Êý¾Ý±»±£»¤ÔÚ³éÏóÊý¾ÝÀàÐÍµÄÄÚ²¿£¬¾¡¿ÉÄÜµØÒþ²ØÄÚ²¿µÄÏ¸½Ú£¬
+		Ö»±£ÁôÒ»Ð©¶ÔÍâ½Ó¿ÚÊ¹Ö®ÓëÍâ²¿·¢ÉúÁªÏµ¡£
+		ÏµÍ³µÄÆäËû²¿·ÖÖ»ÓÐÍ¨¹ý°ü¹üÔÚÊý¾ÝÍâÃæµÄ±»ÊÚÈ¨µÄ²Ù×÷À´ÓëÕâ¸ö³éÏóÊý¾ÝÀàÐÍ½»Á÷Óë½»»¥¡£
+		Ò²¾ÍÊÇËµ£¬ÓÃ»§ÎÞÐèÖªµÀ¶ÔÏóÄÚ²¿·½·¨µÄÊµÏÖÏ¸½Ú£¬µ«¿ÉÒÔ¸ù¾Ý¶ÔÏóÌá¹©µÄÍâ²¿½Ó¿Ú(¶ÔÏóÃûºÍ²ÎÊý)·ÃÎÊ¸Ã¶ÔÏó¡£
+
+        ºÃ´¦£º(1)ÊµÏÖÁË×¨ÒµµÄ·Ö¹¤¡£½«ÄÜÊµÏÖÄ³Ò»ÌØ¶¨¹¦ÄÜµÄ´úÂë·â×°³ÉÒ»¸ö¶ÀÁ¢µÄÊµÌåºó£¬
+		¸÷³ÌÐòÔ±¿ÉÒÔÔÚÐèÒªµÄÊ±ºòµ÷ÓÃ£¬´Ó¶øÊµÏÖÁË×¨ÒµµÄ·Ö¹¤¡£
+		(2)Òþ²ØÐÅ Ï¢£¬ÊµÏÖÏ¸½Ú¡£Í¨¹ý¿ØÖÆ·ÃÎÊÈ¨ÏÞ¿ÉÒÔ½«¿ÉÒÔ½«²»ÏëÈÃ¿Í»§¶Ë³ÌÐòÔ±¿´µ½µÄÐÅÏ¢Òþ²ØÆðÀ´£¬
+		ÈçÄ³¿Í»§µÄÒøÐÐµÄÃÜÂëÐèÒª±£ÃÜ£¬Ö»ÄÜ¶Ô¸Ã¿Í»§¿ª·¢È¨ÏÞ¡£
+
+    Èý¡¢¶àÌ¬
+        ¸ÅÄî£ºÏàÍ¬µÄÊÂÎï£¬µ÷ÓÃÆäÏàÍ¬µÄ·½·¨£¬²ÎÊýÒ²ÏàÍ¬Ê±£¬µ«±íÏÖµÄÐÐÎªÈ´²»Í¬¡£
+        Àí½â£º×ÓÀàÒÔ¸¸ÀàµÄÉí·Ý³öÏÖ£¬µ«×öÊÂÇéÊ±»¹ÊÇÒÔ×Ô¼ºµÄ·½·¨ÊµÏÖ¡£
+		×ÓÀàÒÔ¸¸ÀàµÄÉí·Ý³öÏÖÐèÒªÏòÉÏ×ªÐÍ(upcast)£¬ÆäÖÐÏòÉÏ×ªÐÍÊÇÓÉJVM×Ô¶¯ÊµÏÖµÄ£¬ 
+		ÊÇ°²È«µÄ£¬µ«ÏòÏÂ×ªÐÍ(downcast)ÊÇ²»°²È«µÄ£¬ÐèÒªÇ¿ÖÆ×ª»»¡£
+		×ÓÀàÒÔ¸¸ÀàµÄÉí·Ý³öÏÖÊ±×Ô¼ºÌØÓÐµÄÊôÐÔºÍ·½·¨½«²»ÄÜÊ¹ÓÃ¡£
+
+    ¡°ÃæÏò¹ý³Ì¡±ºÍ¡°ÃæÏò¶ÔÏó¡±µÄÇø±ð
+        ÃæÏò¹ý³Ì¾ÍÊÇ·ÖÎö³ö½â¾öÎÊÌâËùÐèÒªµÄ²½Öè£¬È»ºóÓÃº¯Êý°ÑÕâÐ©²½ÖèÒ»²½Ò»²½ÊµÏÖ£¬
+		Ê¹ÓÃµÄÊ±ºòÒ»¸öÒ»¸öÒÀ´Îµ÷ÓÃ¾Í¿ÉÒÔÁË£»ÃæÏò¶ÔÏóÊÇ°Ñ¹¹³ÉÎÊÌâÊÂÎñ·Ö½â³É¸÷¸ö¶ÔÏó£¬
+		½¨Á¢¶ÔÏóµÄÄ¿µÄ²»ÊÇÎªÁËÍê³ÉÒ»¸ö²½Öè£¬¶øÊÇÎªÁËÃèÐðÄ³¸öÊÂÎïÔÚÕû¸ö½â¾öÎÊÌâµÄ²½ÖèÖÐµÄÐÐÎª
+		¡£ 
+        ¿ÉÒÔÄÃÉú»îÖÐµÄÊµÀýÀ´Àí½âÃæÏò¹ý³ÌÓëÃæÏò¶ÔÏó£¬ÀýÈçÎå×ÓÆå£¬ÃæÏò¹ý³ÌµÄÉè¼ÆË¼Â·¾ÍÊÇÊ×ÏÈ·ÖÎöÎÊÌâµÄ²½Öè£º
+            1¡¢¿ªÊ¼ÓÎÏ·£¬2¡¢ºÚ×ÓÏÈ×ß£¬3¡¢»æÖÆ»­Ãæ£¬4¡¢ÅÐ¶ÏÊäÓ®£¬5¡¢ÂÖµ½°××Ó£¬6¡¢»æÖÆ»­Ãæ£¬7¡¢ÅÐ¶ÏÊäÓ®£¬
+			8¡¢·µ»Ø²½Öè 2£¬9¡¢Êä³ö×îºó½á¹û¡£°ÑÉÏÃæÃ¿¸ö²½ÖèÓÃ²»Í¬µÄ·½·¨À´ÊµÏÖ¡£
+             
+            Èç¹ûÊÇÃæÏò¶ÔÏóµÄÉè¼ÆË¼ÏëÀ´½â¾öÎÊÌâ¡£ÃæÏò¶ÔÏóµÄÉè¼ÆÔòÊÇ´ÓÁíÍâµÄË¼Â·À´ ½â¾öÎÊÌâ¡£
+			Õû¸öÎå×ÓÆå¿ÉÒÔ·ÖÎª
+			1¡¢ºÚ°×Ë«·½£¬ÕâÁ½·½µÄÐÐÎªÊÇÒ»Ä£Ò»ÑùµÄ£¬
+			2¡¢ÆåÅÌÏµÍ³£¬¸ºÔð»æÖÆ»­Ãæ£¬
+			3¡¢¹æÔòÏµÍ³£¬¸ºÔðÅÐ¶¨ÖîÈç·¸¹æ¡¢ÊäÓ®µÈ¡£µÚÒ»Àà¶Ô Ïó£¨Íæ¼Ò¶ÔÏó£©¸ºÔð½ÓÊÜÓÃ»§ÊäÈë£¬
+			²¢¸æÖªµÚ¶þÀà¶ÔÏó£¨ÆåÅÌ¶ÔÏó£©Æå×Ó²¼¾ÖµÄ±ä»¯£¬ÆåÅÌ¶ÔÏó½ÓÊÕµ½ÁËÆå×ÓµÄ±ä»¯¾ÍÒª¸ºÔðÔÚÆÁÄ»ÉÏÃæÏÔÊ¾³öÕâÖÖ±ä»¯£¬
+			Í¬Ê±ÀûÓÃ µÚÈýÀà¶ÔÏó£¨¹æÔòÏµÍ³£©À´¶ÔÆå¾Ö½øÐÐÅÐ¶¨¡£
+```
+##### ²Î¿¼ÔÄ¶Á£º[ÎÒ¶ÔÃæÏò¶ÔÏóµÄÀí½â-ÍùÊÂÒàÈç·ç](https://www.cnblogs.com/ldnh/p/5475069.html)
 
 ### 58¡¢PythonÃæÏò¶ÔÏóÖÐµÄ¼Ì³ÐÓÐÊ²Ã´ÌØµã£¿
+```
+×Ô¼º¼òµ¥ÖªµÀPythoÄÜ¶àÖØ¼Ì³Ð£¬¼´¼Ì³Ð¶à¸ö¸¸Àà£¬ÓÉ´ËÒ²´æÔÚMRO£¨·½·¨½âÎöË³Ðò£©ÎÊÌâ£¬¶àÖØ¼Ì³ÐÍùÍùÓësuper£¨£©·½·¨Ò»ÆðÌá¼° 
+```
+##### ²Î¿¼ÔÄ¶Á£º[Python¼Ì³Ð¸ÅÄîµÄÕâÐ©ÓÅÈ±µãÄãÖªµÀÂð£¿](http://developer.51cto.com/art/201802/566029.htm)
 
 ### 59¡¢ÃæÏò¶ÔÏóÉî¶ÈÓÅÏÈºÍ¹ã¶ÈÓÅÏÈÊÇÊ²Ã´£¿
+```
+Õâ¸öÉæ¼°µ½¾­µäÀàÓëÐÂÊ½ÀàÖÐµÄMRO£¨·½·¨½âÎöË³Ðò£©ÎÊÌâ£¬Çë¿´ÏÂÃæµÄ²Î¿¼ÔÄ¶Á¡£
+```
+##### ²Î¿¼ÔÄ¶Á£º[ÄãÕæµÄÀí½âPythonÖÐMROËã·¨Âð£¿](http://python.jobbole.com/85685/)
 
 ### 60¡¢ÃæÏò¶ÔÏóÖÐsuperµÄ×÷ÓÃ£¿
+```
+super() º¯ÊýÊÇÓÃÓÚµ÷ÓÃ¸¸Àà(³¬Àà)µÄÒ»¸ö·½·¨¡£
+
+super ÊÇÓÃÀ´½â¾ö¶àÖØ¼Ì³ÐÎÊÌâµÄ£¬Ö±½ÓÓÃÀàÃûµ÷ÓÃ¸¸Àà·½·¨ÔÚÊ¹ÓÃµ¥¼Ì³ÐµÄÊ±ºòÃ»ÎÊÌâ£¬
+µ«ÊÇÈç¹ûÊ¹ÓÃ¶à¼Ì³Ð£¬»áÉæ¼°µ½²éÕÒË³Ðò£¨MRO£©¡¢ÖØ¸´µ÷ÓÃ£¨×êÊ¯¼Ì³Ð£©µÈÖÖÖÖÎÊÌâ¡£
+```
+##### ²Î¿¼ÔÄ¶Á£º[Python super()º¯Êý](http://www.runoob.com/python/python-func-super.html), [Python: Äã²»ÖªµÀµÄ super](http://python.jobbole.com/86787/)
 
 ### 61¡¢ÊÇ·ñÊ¹ÓÃ¹ýfunctoolsÖÐµÄº¯Êý£¿Æä×÷ÓÃÊÇÊ²Ã´£¿
+```
+Õâ¸ö×Ô¼ºÒ²²»Ì«Çå³þ£¬Çë²Î¿¼ÏÂÃæµÄ²Î¿¼ÔÄ¶Á¡£
+```
+##### [Python±ê×¼Ä£¿é--functools](https://www.cnblogs.com/zhbzz2007/p/6001827.html), [Python-½ø½×-functoolsÄ£¿éÐ¡½á](http://wklken.me/posts/2013/08/18/python-extra-functools.html)
 
 ### 62¡¢ÁÐ¾ÙÃæÏò¶ÔÏóÖÐ´øË¬ÏÂ»®ÏßµÄÌØÊâ·½·¨£¬Èç£º__new__¡¢__init__
+```
+_init__(self,...) ¡¢__del__(self) ¡¢__call__(self, *args) ¡¢__str__(self, ·½·¨)
+__add__¡¢__dic__¡¢__getitem__¡¢__setitem__¡¢__delitem__¡¢__iter__
+```
+##### ²Î¿¼ÔÄ¶Á£º[PythonÃæÏò¶ÔÏó5£ºÌØÊâ·½·¨](https://blog.csdn.net/PbGc396Dwxjb77F2je/article/details/78890715)
 
 ### 63¡¢ÈçºÎÅÐ¶ÏÊÇº¯Êý»¹ÊÇ·½·¨£¿
 
