@@ -1145,16 +1145,85 @@ my_singleton.foo()
 ##### 参考阅读：[Python 中的单例模式](http://python.jobbole.com/87294/)
 
 ### 70、装饰器的写法以及应用场景。
+```
+装饰器是一个很著名的设计模式，经常被用于有切面需求的场景，
+较为经典的有插入日志、性能测试、事务处理等。装饰器是解决这类问题的绝佳设计，
+有了装饰器，我们就可以抽离出大量函数中与函数功能本身无关的雷同代码并继续重用。
+概括的讲，装饰器的作用就是为已经存在的对象添加额外的功能。
+
+def decorator(func):
+	def wapper(*args, **kwargs):
+		print("This is a defcorator!")
+		reture func(*args, **kwargs)
+	return wapper
+```
+##### 参考阅读：[Python中如何在一个函数中加入多个装饰器? ](https://taizilongxu.gitbooks.io/stackoverflow-about-python/content/3/README.html)
 
 ### 71、异常处理写法以及如何主动跑出异常（应用场景）
+```
+try:
+	<语句>        #运行别的代码
+except <名字>：
+	<语句>        #如果在try部份引发了'name'异常
+except <名字>，<数据>:
+	<语句>        #如果引发了'name'异常，获得附加的数据
+else:
+	<语句>        #如果没有异常发生
+finally:
+	<语句>        #语句无论是否发生异常都将执行最后的代码。
 
-### 72、什么是面向对象的mro
+
+raise语句自动触发异常
+
+raise语法格式如下：
+
+raise [Exception [, args [, traceback]]]
+
+语句中 Exception 是异常的类型（例如，NameError）参数标准异常中任一种，args 是自已提供的异常参数。
+
+最后一个参数是可选的（在实践中很少使用），如果存在，是跟踪异常对象。
+```
+##### 参考阅读：[Python 异常处理](https://www.runoob.com/python/python-exceptions.html)
+
+### 72、什么是面向对象的mro?
+```
+上面58，59题有提及，请查看。
+```
 
 ### 73、isinstance作用以及应用场景？
+```
+描述:
+isinstance() 函数来判断一个对象是否是一个已知的类型，类似 type()。
+
+    isinstance() 与 type() 区别：
+
+        type() 不会认为子类是一种父类类型，不考虑继承关系。
+
+        isinstance() 会认为子类是一种父类类型，考虑继承关系。
+
+    如果要判断两个类型是否相同推荐使用 isinstance()。
+
+语法:
+
+以下是 isinstance() 方法的语法:
+
+isinstance(object, classinfo)
+
+参数:
+
+    object -- 实例对象。
+    classinfo -- 可以是直接或间接类名、基本类型或者由它们组成的元组。
+
+返回值
+
+如果对象的类型与参数二的类型（classinfo）相同则返回 True，否则返回 False。。
+```
+##### 参考阅读：[Python isinstance()函数](http://www.runoob.com/python/python-func-isinstance.html)
  
 ### 74、写代码并实现： 
 ```
- Given an array of integers, return indices of the two numbers such that they add up to a specific target.You may assume that each input would 
+ Given an array of integers, return indices of the two numbers such that 
+ they add up to a specific target.You may assume that each input would 
 
  have exactly one solution, and you may not use the same element twice.
 
@@ -1166,19 +1235,120 @@ my_singleton.foo()
     
                 return [0, 1]
 
+				
+class Solution():
+	
+	
+	def twoSum(self, nums, targets):
+		"""
+		:type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+		"""
+		dct = {}
+		
+		for index, value in enumerate(nums):
+			j = target - value
+			if j in dct:
+				return [ dct[j], index]
+			else:
+				dct[value] = index
  ```
 
 ### 75、json序列化时，可以处理的数据类型有哪些？如何定制支持datetime类型？
+```
+JSON格式支持的数据类型有以下：
+ 类型	        描述
+Number 	在JavaScript中的双精度浮点格式 
+
+String 	双引号的反斜杠转义的Unicode
+
+Boolean 	true 或 false
+
+Array 	    值的有序序列
+
+Value 	它可以是一个字符串，一个数字，真的还是假（true/false），空(null )等
+
+Object 	   无序集合键值对
+
+Whitespace 	 可以使用任何一对中的令牌
+
+null 	        empty
+
+
+自定义时间序列化转换器
+import json
+from json import JSONEncoder
+from datetime import datetime
+class ComplexEncoder(JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, datetime):
+            return obj.strftime('%Y-%m-%d %H:%M:%S')
+        else:
+            return super(ComplexEncoder,self).default(obj)
+d = { 'name':'alex','data':datetime.now()}
+print(json.dumps(d,cls=ComplexEncoder))
+# {"name": "alex", "data": "2018-05-18 19:52:05"}
+```
 
 ### 76、json序列化时，默认遇到中文会转换成unicode，如果想要保留中文怎么办？
+```
+import json
+a=json.dumps({"ddf":"你好"},ensure_ascii=False)
+print(a) #{"ddf": "你好"}
+```
 
 ### 77、什么是断言？应用场景？
+```
+请参考下面的阅读。
+```
+##### 参考阅读： [Python 中何时使用断言？](http://blog.jobbole.com/76285/)
 
 ### 78、有用过with statement吗？它的好处是什么？
+```
+Python中的有关上下文管理器的部分。
+```
+##### 参考阅读：[with statement - CSDN博客](https://blog.csdn.net/xtydtc/article/details/52037489)
 
 ### 79、使用代码实现查看列举目录下的所有文件。
+```
+提供4个方法理出文件夹内的所有内容
+
+Python
+#方法1：使用os.listdir
+import os
+for filename in os.listdir(r'c:\windows'):
+    print filename
+ 
+#方法2：使用glob模块，可以设置文件过滤
+import glob
+for filename in glob.glob(r'c:\windows\*.exe'):
+    print filename
+ 
+#方法3：通过os.path.walk递归遍历，可以访问子文件夹
+import os.path
+def processDirectory ( args, dirname, filenames ):
+    print 'Directory',dirname
+    for filename in filenames:
+        print ' File',filename
+ 
+os.path.walk(r'c:\windows', processDirectory, None )
+ 
+#方法4：非递归
+import os
+for dirpath, dirnames, filenames in os.walk('c:\\winnt'):
+    print 'Directory', dirpath
+    for filename in filenames:
+        print ' File', filename
+#该代码片段来自于: http://www.sharejs.com/codes/python/211
+```
 
 ### 80、简述 yield和yield from关键字。
+```
+请参考下面的文章。
+```
+##### 参考阅读：[python3中的yield from语句](https://blog.csdn.net/wangjianno2/article/details/51935977)
+
 
 ----
 # 第二部分 网络编程和并发（34题）
