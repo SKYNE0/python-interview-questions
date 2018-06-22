@@ -888,9 +888,10 @@ def binary_search(alist, key)
 ##### [谈谈自己的理解:python中闭包，闭包的实质 - 稀里糊涂林老冷 - 博客园](https://www.cnblogs.com/Lin-Yi/p/7305364.html)
 
 ### 54、os和sys模块的作用？
-```两者的主要区别：
-	os模块负责程序与操作系统的交互，提供了访问操作系统底层的接口，
-	sys模块负责程序与Python解释器的交互，提供了一系列的函数和变量，用于操控python的运行时环境。
+```
+两者的主要区别：
+os模块负责程序与操作系统的交互，提供了访问操作系统底层的接口，
+sys模块负责程序与Python解释器的交互，提供了一系列的函数和变量，用于操控python的运行时环境。
 ```
 ##### 参考阅读：[os和sys模块-君醉-博客园](https://www.cnblogs.com/pycode/p/sysos.html)
 
@@ -1257,24 +1258,14 @@ class Solution():
 
 ### 75、json序列化时，可以处理的数据类型有哪些？如何定制支持datetime类型？
 ```
-JSON格式支持的数据类型有以下：
- 类型	        描述
-Number 	在JavaScript中的双精度浮点格式 
-
-String 	双引号的反斜杠转义的Unicode
-
-Boolean 	true 或 false
-
-Array 	    值的有序序列
-
-Value 	它可以是一个字符串，一个数字，真的还是假（true/false），空(null )等
-
-Object 	   无序集合键值对
-
-Whitespace 	 可以使用任何一对中的令牌
-
-null 	        empty
-
+JSON类型            Python类型
+{}                  dict
+[]                  list
+"string"            str
+1234.56             int或float
+true                True
+false               False
+null                None
 
 自定义时间序列化转换器
 import json
